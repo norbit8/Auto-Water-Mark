@@ -14,7 +14,6 @@ def main():
     images = listdir_nohidden('./images')
     for image in images:
         image_name = image.split('/')[2]
-        print(image_name)
         src1 = cv.imread(cv.samples.findFile(image))
         src2 = cv.imread(cv.samples.findFile('copy_right.jpeg'))
         if src1 is None:
